@@ -46,7 +46,7 @@ Navigate to the Google Cloud Platform \(GCP\) [console](https://console.cloud.go
 
 Create a new service account \(APIs & Services &gt; Credentials &gt; Create Credentials &gt; Service Account\).
 
-Once created, download the JSON based key and use it's values to populate the above configuration values:
+Once created, go to [service account](https://console.cloud.google.com/iam-admin/serviceaccounts), create a JSON key, download it and use it's values to populate the above configuration values:
 
 * `project_id` -&gt; `GOOGLE_ACCOUNT_PROJECT_ID`
 * `private_key_id` -&gt; `GOOGLE_SERVICE_PRIVATE_KEY_ID`
