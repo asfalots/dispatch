@@ -4,6 +4,14 @@ By default, Dispatch ships with support for Slack. Below, is how to configure th
 
 Note: The `Slack` plugin relies on the [Events API](https://api.slack.com/events-api) to receive events for the event types the bot is subscribed to. `Dispatch` receives these events at the `/events/slack/event` API endpoint. This endpoint must be publicly available in order for the `Dispatch` Slack app to work correctly.
 
+## Create a slack app 
+
+Go to [Slack API](https://api.slack.com/apps?new_app=1) and create a new application.
+
+Enable **Event Subscription**  and register your Dispatch url `https://<YOUR_DISPATCH_DOMAIN>/events/slack/event` (Your dispatch instance must be running to be allowed)
+
+
+
 ## Configuration
 
 #### `SLACK_APP_USER_SLUG`
@@ -16,7 +24,7 @@ Note: The `Slack` plugin relies on the [Events API](https://api.slack.com/events
 
 #### `SLACK_API_BOT_TOKEN` \[secret: True\]
 
-> Bot Token used to communicate with the Slack API.
+> Client Secret used to communicate with the Slack API.
 
 #### `SLACK_SIGNING_SECRET` \[secret: True\]
 
